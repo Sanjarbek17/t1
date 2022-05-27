@@ -4,6 +4,7 @@ jobs:
   build: 
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1
       - run: ls
       - run: dart t1.dart
