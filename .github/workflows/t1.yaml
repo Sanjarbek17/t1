@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ls
-      - run: dart run main.dart
+      - run: dart run t1.dart
         
     
