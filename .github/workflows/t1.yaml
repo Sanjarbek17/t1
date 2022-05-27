@@ -1,5 +1,11 @@
 name: t1
 on: [push]
 jobs:
-  steps:
-    - run: echo "hi"
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ls
+      - run: dart run main.dart
+        
+    
