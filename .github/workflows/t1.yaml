@@ -7,6 +7,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: dart-lang/setup-dart@v1
       - run: ls
-      - run: dart test test.dart
+      - run: dart run test.dart
         
     
