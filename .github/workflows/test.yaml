@@ -14,4 +14,4 @@ jobs:
       - run: dart pub get
       # - run: dart test
       - run: dart test --file-reporter json:tests.json
-      - run: python dart_test_check.py & python sendtest ${{github.actor}} '${{github.repository}}'
+      - run: python dart_test_check.py & python sendtest.py ${{github.actor}} '${{github.repository}}'
