@@ -1,0 +1,18 @@
+name: test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+        with:
+          repository: dart-test-2022/arithmetic_operator_r_test
+          path: test
+      - uses: dart-lang/setup-dart@v1.3
+      - run: dart pub get
+      - run: dart test
+      - run: dart test --file-reporter json:tests.json
+      - run: python dart_test_check.py
+      - run: python sendtest ${{github.actor}} '${{github.repository}}'

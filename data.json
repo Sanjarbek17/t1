@@ -1,0 +1,22 @@
+[
+    {
+        "name":"t1_test.dart",
+        "details":{
+            "passed":2,
+            "failed":1,
+            "skipped":0,
+            "total":0
+        },
+        "isSolved":false
+    },
+    {
+        "name":"t2_test.dart",
+        "details":{
+            "passed":2,
+            "failed":1,
+            "skipped":0,
+            "total":0
+        },
+        "isSolved":false
+    }
+]
