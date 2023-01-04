@@ -14,6 +14,4 @@ jobs:
       - run: dart pub get
       # - run: dart test
       - run: dart test --file-reporter json:tests.json
-      - uses: actions/checkout@v2
-      - run: python dart_test_check.py
-      - run: python sendtest ${{github.actor}} '${{github.repository}}'
+      - run: python dart_test_check.py & python sendtest ${{github.actor}} '${{github.repository}}'
