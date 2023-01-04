@@ -6,7 +6,7 @@ void main() {
     expect(calculate(), 42);
   });
   test('calculate', () {
-    expect(calculate2(4, 5), 2);
+    expect(calculate2(4, 5), 20);
   });
   test('calasdfculate', () {
     expect(calculate2(4, 5), 20);
