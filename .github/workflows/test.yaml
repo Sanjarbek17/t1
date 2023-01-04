@@ -13,6 +13,6 @@ jobs:
       - uses: dart-lang/setup-dart@v1.3
       - run: dart pub get
       # - run: dart test
-      - run: dart test --file-reporter json:tests.json
       - run: python dart_test_check.py
+      - run: dart test --file-reporter json:tests.json
       - run: python sendtest ${{github.actor}} '${{github.repository}}'
